@@ -13,13 +13,18 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="jumbotron">
-				<div class="row">
-					<div class="col-3-md col-md-offset-4">
-						<h1>Hello World!</h1>
-					</div>
-				</div>
+			<div id="title-bar" class="row">
+				<h1>Twitch Status</h1>
+				<nav>
+					<ul id="navlist">
+						<li class="button-block button-minimal">All</li>
+						<li class="button-block button-minimal"><span class="dot status-on"></span> Online</li>
+						<li class="button-block button-minimal"><span class="dot status-off"></span> Offline</li>
+					</ul>
+				</nav>
 			</div>
+			<div id="streamer-list" class="row"></div>
+			<div class="bottom-bar row"></div>
 		</div>
 	</body>
 		<!-- vendor:js -->
