@@ -2,6 +2,14 @@ body {
   text-align: center;
 }
 
+a {
+  color: #2F4F4F;
+}
+
+a:hover {
+  color: #0E2E2E;
+}
+
 h1 {
   font-family: impact;
   color: #444;
@@ -9,11 +17,11 @@ h1 {
 
 img {
   border-radius: 50%;
-  min-height: 50px;
-  min-width: 50px;
+  height: 3.5em;
+  width: 3.5em;
 }
 
-
+/* Colorss */
 .app-default {
   background: #789;
 }
@@ -27,17 +35,17 @@ img {
 }
 
 .app-body {
-  margin: 0 auto;
+  margin: 1.5em auto;
   max-width: 650px;
 
 }
 
-.btn-default {
+.btn {
   border-radius: 0;
 }
 
 .btn-group {
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
   width: 99%;
 }
 
@@ -46,15 +54,23 @@ img {
 }
 
 .streamer-elt {
-  padding: 5px 0;
+  font-size: 1.1em;
+  padding: 0.25em 0;
   margin: 2px 0;
 }
 
-.title-bar {
-  padding-bottom: 5px;
+.col-xs-10 {
+  padding: 1em 0;
 }
 
-.vcenter {
-
-  padding: 1em 0;
+@media(max-width:48em){
+  .app-body {
+    margin: 0 auto;
+  }
+  .col-xs-hidden {
+    display: none;
+  }
+  .col-xs-10 {
+    padding: 0.1em 0;
+  }
 }
