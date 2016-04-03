@@ -1,4 +1,60 @@
-.dot {
-    content: "\25cf";
-    font-size: 1.5em;
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: impact;
+  color: #444;
+}
+
+img {
+  border-radius: 50%;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+
+.app-default {
+  background: #789;
+}
+
+.app-online {
+  background: #BCA;
+}
+
+.app-offline {
+  background: #999;
+}
+
+.app-body {
+  margin: 0 auto;
+  max-width: 650px;
+
+}
+
+.btn-default {
+  border-radius: 0;
+}
+
+.btn-group {
+  margin: 0 auto;
+  width: 99%;
+}
+
+.bar-bottom {
+  height: 15px;
+}
+
+.streamer-elt {
+  padding: 5px 0;
+  margin: 2px 0;
+}
+
+.title-bar {
+  padding-bottom: 5px;
+}
+
+.vcenter {
+
+  padding: 1em 0;
 }

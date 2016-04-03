@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title></title>
-		<meta charset="utf-8">
-		<meta name="description" content="">
-		<meta name="viewport" content="width-device-width, initial-scale=1">
-		<link rel="icon" type="image/x-icon" href="./favicon.ico">
-		<!-- vendor:css -->
-		<!-- endinject -->
-		<!-- main:css -->
-		<!-- endinject -->
-	</head>
-	<body>
-		<div class="container">
-			<div id="title-bar" class="row">
-				<h1>Twitch Status</h1>
-				<nav>
-					<ul id="navlist">
-						<li class="button-block button-minimal">All</li>
-						<li class="button-block button-minimal"><span class="dot status-on"></span> Online</li>
-						<li class="button-block button-minimal"><span class="dot status-off"></span> Offline</li>
-					</ul>
-				</nav>
+
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<!-- vendor:css -->
+	<!-- endinject -->
+	<!-- main:css -->
+	<!-- endinject -->
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="app-body">
+					<div id="title-bar" class="row title-bar app-default">
+						<h1>Twitch Status</h1>
+						<div>
+							<div class="btn-group btn-group-justified">
+								<div class="btn-group">
+									<button class="btn btn-lg btn-default">All</button>
+								</div>
+								<div class="btn-group">
+									<button class="btn btn-lg btn-default">Online</button>
+								</div>
+								<div class="btn-group">
+									<button class="btn btn-lg btn-default">Offline</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="streamer-list" class="row">
+						<div class="row streamer-elt app-online">
+							<div class="col-xs-1">
+								<img class="img-responsive"src="http://www.fillmurray.com/300/300" alt="">
+							</div>
+							<div class="col-xs-3 vcenter">
+								<a href="">DummyAct</a>
+							</div>
+							<div class="col-xs-8 vcenter">
+								<em>This is a test online div</em>
+							</div>
+						</div>
+						<div class="row streamer-elt app-offline">
+							<div class="col-xs-1">
+								<img class="img-responsive"src="http://www.fillmurray.com/400/400" alt="">
+							</div>
+							<div class="col-xs-3 vcenter">
+								<a href="">DummyAct</a>
+							</div>
+							<div class="col-xs-8 vcenter">
+								<em>This is a test offline div</em>
+							</div>
+						</div>
+					</div>
+					<div class="row bar-bottom app-default"></div>
+				</div>
 			</div>
-			<div id="streamer-list" class="row"></div>
-			<div class="bottom-bar row"></div>
 		</div>
-	</body>
-		<!-- vendor:js -->
-		<!-- endinject -->
-		<!-- main:js -->
-		<!-- endinject -->
+	</div>
+</body>
+<!-- vendor:js -->
+<!-- endinject -->
+<!-- main:js -->
+<!-- endinject -->
+
 </html>
